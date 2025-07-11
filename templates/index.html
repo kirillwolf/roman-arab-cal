@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<h1>Калькулятор (римские / арабские)</h1>
+	<form method="POST">
+		<input type="text" name="expr" placeholder="например: X + V или 1 + 5" value="{{.Expression}}" size="30" />
+		<input type="submit" value="Вычислить">
+	</form>
+	{{if .Result}}<p><strong>Результат:</strong> {{.Result}}</p>{{end}}
+	{{if .Error}}<p class="error"><strong>{{.Error}}</strong></p>{{end}}
+</body>
+</html>
