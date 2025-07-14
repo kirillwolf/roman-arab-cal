@@ -22,6 +22,8 @@ go run ./cmd
 
 go run ./cmd/web
 
+Открой в браузере: http://localhost:8080
+
 📁 Структура проекта
 
 roman-arab-cal/
